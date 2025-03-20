@@ -364,8 +364,8 @@ body{
     }
     .dei-heading-s {
         font-size: 26px;
-        padding-left: 9%;
-        width: 100%;
+        padding-left: 2%;
+        width: 96%;
         text-align: left;
         align-items: center;
         font-weight: 450;
@@ -393,7 +393,7 @@ body{
         font-size: 36px;
     }
     .dei-description {
-        font-size: 12px;
+        font-size: 16px;
         margin-right: 10px;
     }
     .service-image img {

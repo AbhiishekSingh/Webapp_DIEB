@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Analytics } from "@vercel/analytics/react"
 import './App.css';
 import Header from './Component/Header/Header';
 import Home from './Component/Homes/Home';

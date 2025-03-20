@@ -40,7 +40,10 @@
 .approach-item1 {
     width: 30%;
     text-align: center;
+    padding: 0px;
+    margin: 0px;
 }
+
 .new-img-styl{
     justify-content: center;
     align-items: center;
@@ -139,6 +142,16 @@
         margin-right: 2%;
         padding: 20px;
     }
+    .approach-item1 img{
+        object-fit: cover;
+        overflow: hidden;
+        width: 100%;
+      }
+      .new-img-styl-i img{
+        object-fit: cover;
+        overflow: hidden;
+        width: 100%;
+      }
     .approach-title1 {
         font-size: 14px;
     }
