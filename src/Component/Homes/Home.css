@@ -216,6 +216,14 @@
         position: relative;
         padding: 0px;
     }
+    .highlight-container16 {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 80px;
+        gap: 20px;
+      }
 }
 
 
