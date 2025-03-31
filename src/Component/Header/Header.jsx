@@ -1,9 +1,10 @@
-import React, { useState } from "react"; 
-import "./Header.css"; 
+import React, { useState } from "react";
+import "./Header.css";
 import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -11,34 +12,41 @@ const Header = () => {
 
   const handleLinkClick = () => {
     setIsMenuOpen(false); // Close menu when a link is clicked
+    setActiveDropdown(null); // Close dropdown when navigating
+  };
+
+  const handleDropdownToggle = (dropdown) => {
+    setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
   };
 
   return (
-    <nav className="nav-container">
+    <nav className="deib-nav-container">
       {/* Logo */}
-      <div className="nav-logo">
+      <div className="deib-nav-logo">
         <img src="/images/Logo.png" alt="Logo" />
         <span>DEIB Innovation</span>
       </div>
 
       {/* Mobile Menu Toggle */}
-      <div className="nav-mobile-menu" onClick={handleMenuToggle}>
+      <div className="deib-nav-mobile-menu" onClick={handleMenuToggle}>
         <span></span>
         <span></span>
         <span></span>
       </div>
 
       {/* Navigation Links */}
-      <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
+      <ul className={`deib-nav-links ${isMenuOpen ? "active" : ""}`}>
         <li>
           <Link to="/" onClick={handleLinkClick}>Home</Link>
         </li>
         <li>
           <Link to="/methodology" onClick={handleLinkClick}>Methodology</Link>
         </li>
-        <li className="nav-dropdown">
-          <Link to="/service" onClick={handleLinkClick}>Services</Link>
-          <div className="nav-dropdown-menu">
+        <li className="deib-nav-dropdown">
+          <div className="deib-nav-dropdown-title" onClick={() => handleDropdownToggle("services")}>
+            Services
+          </div>
+          <div className={`deib-nav-dropdown-menu ${activeDropdown === "services" ? "show" : ""}`}>
             <Link to="/service" onClick={handleLinkClick}>Diversity</Link>
             <Link to="/service" onClick={handleLinkClick}>Equity</Link>
             <Link to="/service" onClick={handleLinkClick}>Inclusion</Link>
@@ -52,7 +60,7 @@ const Header = () => {
           <Link to="/about-us" onClick={handleLinkClick}>About us</Link>
         </li>
         <li>
-          <Link to="/contact" className="nav-contact-btn" onClick={handleLinkClick}>
+          <Link to="/contact" className="deib-nav-contact-btn" onClick={handleLinkClick}>
             Contact
           </Link>
         </li>

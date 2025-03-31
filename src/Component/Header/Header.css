@@ -1,176 +1,124 @@
 /* Navbar Container */
-.nav-container {
+.deib-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #252525;
+  width: 100%;
+  color: white;
+  padding: 10px 0px;
+}
+
+/* Logo */
+.deib-nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.deib-nav-logo img {
+  height: 60px;
+}
+
+.deib-nav-logo span {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Navigation Links */
+.deib-nav-links {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+}
+
+.deib-nav-links a {
+  text-decoration: none;
+  color: rgb(255, 255, 255) !important;  /* Ensure links are black */
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: 18px;
+  padding: 8px 12px;
+}
+
+.deib-nav-links a:hover {
+  color: rgb(70, 70, 70);
+}
+
+/* Mobile Menu Toggle */
+.deib-nav-mobile-menu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.deib-nav-mobile-menu span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .deib-nav-mobile-menu {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #252525;
-    width: 100%;
-    overflow-y: hidden;
-    color: white;
-    padding: 10px 0px;
   }
-  
-  /* Logo */
-  .nav-logo {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  
-  .nav-logo img {
-    height: 60px;
-  }
-  
-  .nav-logo span {
-    font-size: 22px;
-    font-weight: 600;
-  }
-  
-  /* Navigation Links */
-  .nav-links {
-    display: flex;
-    gap: 8px;
-    list-style: none;
-  }
-  
-  .nav-links li {
-    position: relative;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 500;
-    transition: color 0.3s ease;
-    font-size: 18px;
-    padding: 8px 12px;
-  }
-  
-  .nav-links a:hover {
-    color: rgb(214, 214, 214);
-  }
-  
-  /* Dropdown Menu */
-  .nav-dropdown-menu {
-    position: absolute;
-    top: 40px;
-    left: 0;
-    background: solid #252525 ;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    border-radius: 8px;
-    display: none;
-    min-width: 180px;
-    z-index: 1000;
-  }
-  
-  .nav-dropdown:hover .nav-dropdown-menu {
-    display: block;
-  }
-  
-  .nav-dropdown-menu a {
-    display: block;
-    padding: 10px;
-    color: white;
-    text-align: left;
-  }
-  
-  .nav-dropdown-menu a:hover {
-    background: #404040;
-  }
-  
-  /* Mobile Menu Toggle */
-  .nav-mobile-menu {
-    display: none;
+
+  .deib-nav-links {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background: #252525; /* White background */
     flex-direction: column;
-    gap: 5px;
-    margin-right: 10px;
-    cursor: pointer;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    transition: left 0.3s ease-in-out;
   }
-  
-  .nav-mobile-menu span {
+
+  .deib-nav-links.active {
+    left: 0;
+  }
+
+  .deib-nav-links a {
+    color: rgb(255, 255, 255) !important; /* Ensure mobile links are black */
+    width: 100%;
     display: block;
-    width: 30px;
-    height: 3px;
-    background: white;
-    transition: all 0.3s ease;
+    padding: 12px 0;
   }
-  
-  /* Responsive Styles */
-  @media screen and (max-width: 1024px) {
-    .nav-logo span {
-      font-size: 22px;
-    }
-  
-    .nav-contact-btn {
-      font-size: 14px;
-    }
+
+  .deib-nav-links a:hover {
+    color: rgb(70, 70, 70);
   }
-  
-  @media screen and (max-width: 768px) {
-    .nav-mobile-menu {
-      display: flex;
-    }
-  
-    .nav-links {
-      position: absolute;
-      top: 60px;
-      right: 0;
-      width: 100%;
-      background: #252525;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-      padding: 20px 0;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      display: none;
-    }
-  
-    .nav-links.active {
-      display: flex;
-    }
-  
-    .nav-links li {
-      text-align: center;
-      width: 100%;
-    }
-  
-    .nav-links a {
-      display: block;
-      width: 100%;
-      padding: 12px 0;
-    }
-  
-    /* Dropdown Styling */
-    .nav-dropdown-menu {
-      position: relative;
-      top: 0;
-      left: 0;
-      width: 100%;
-      text-align: center;
-      background: #252525;
-      border-radius: 0;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .nav-logo span {
-      font-size: 18px;
-    }
-  
-    .nav-logo img {
-      height: 28px;
-    }
-  
-    .nav-contact-btn {
-      font-size: 14px;
-      padding: 8px 16px;
-    }
-  
-    .nav-dropdown-menu {
-      position: relative;
-      background: #252525;
-      text-align: center;
-    }
-  }
-  
+}
+
+/* Dropdown Styling */
+.deib-nav-dropdown-menu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  display: none;
+  min-width: 180px;
+  z-index: 1000;
+}
+
+.deib-nav-dropdown:hover .deib-nav-dropdown-menu {
+  display: block;
+}
+
+.deib-nav-dropdown-menu a {
+  color: rgb(255, 255, 255) !important; /* Ensure dropdown links are black */
+}
+
+.deib-nav-dropdown-menu a:hover {
+  background: #f0f0f0;
+}
