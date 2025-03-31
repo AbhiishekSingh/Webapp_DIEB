@@ -1,463 +1,139 @@
-.header-ur {
-    background-color: #F3F4F6;
-    color: #252525;
-    padding: 3rem 2rem;
-    text-align: center;
-  }
-  
-  .header-title-ur {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  .header-description-ur {
-    font-size: 1.2rem;
-    margin-bottom: 0;
-  }
-  
-  /* Features Section */
-  .features-ur {
-    padding: 1rem 1rem;
-  }
-  
-  .features-container-ur {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .features-title-ur {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-  }
-  
-  .features-cards-ur {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-  }
-  
-  .feature-card-ur {
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    border-radius: 8px;
-    padding: 2rem;
-    flex: 1 1 30%;
-    min-width: 250px;
-  }
-  
-  .feature-title-ur {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-  }
-  .feature-card-ur p{
-    font-size: 20px;
-  }
-  .feature-card-ur h3{
-    color: #44195e;
-    font-size: 2rem;
-  }
-
-
-  /* Action Section */
-  .action-ur {
-    background-color: #f3f4f6;
-    padding: 4rem 2rem;
-  }
-  
-  .action-container-ur {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .action-title-ur {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-  }
-  
-  .action-description-ur {
-    font-size: 1.2rem;
-    color: #252525;
-  }
-  
-  /* Next Steps Section */
-  .next-steps-ur {
-    padding: 4rem 2rem;
-  }
-  
-  .next-steps-container-ur {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .next-steps-title-ur {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-  }
-  
-  .next-steps-options-ur {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-  }
-  
-  .next-step-option-ur {
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 2rem;
-    flex: 1 1 45%;
-    min-width: 250px;
-  }
-  
-  .option-title-ur {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-  }
-  .option-title-ur p{
-    font-size: 20px;
-  }
-  /* DEIB Model Section */
-  .deib-model-ur {
-    color: black;
-  }
-  
-  .deib-model-container-ur {
-    max-width: 100%;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .deib-model-title-ur {
-    font-size: 2.6rem;
-    font-weight: 600;
-  }
-  
-  .deib-model-description-ur {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .deib-model-image-container-ur {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .deib-model-image-ur {
-    max-width: 100%;
-    height: auto;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.deib-ur-container {
-    max-width: 100%;
-    padding: 40px 20px;
-    background-color: #f8f9fa;
-    text-align: center;
-}
-
-.deib-ur-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.deib-ur-highlight {
-    color: #252525;
-}
-
-.deib-ur-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-}
-
-.deib-ur-card {
+/* Navbar Container */
+.deib-nav-container {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  background-color: white;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  border-radius: 10px;
-  min-height: 300px; /* Ensures equal height */
-  width: 70%;
-  box-sizing: border-box;
-  text-align: left;
-  flex-grow: 1;
-}
-
-.deib-ur-reverse {
-  flex-direction: row-reverse;
-}
-
-.deib-ur-image {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-right: 20px;
-}
-
-.deib-ur-content {
-    flex: 1;
-}
-
-.deib-ur-icon {
-    font-size: 2rem;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.deib-ur-heading {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #252525;
-}
-
-.deib-ur-description {
-    font-size: 1rem;
-    margin-bottom: 10px;
-}
-
-.deib-ur-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.deib-ur-list-item {
-    font-size: 1rem;
-    margin-bottom: 5px;
-    display: flex;
-    align-items: center;
-}
-
-
-
-.services-container {
-    text-align: center;
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.services-title {
-    text-align: left;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    justify-content: center;
-}
-
-.service-item {
-    background: #ffff;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.service-icon {
-    width: 100px;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.service-heading {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 8px;
-}
-
-.service-description {
-    font-size: 14px;
-    color: #555;
-}
-
-
-/* Responsive Media Queries */
-
-@media (max-width: 1024px) {
-    .services-container {
-        padding: 20px;
-    }
-    .services-title {
-        font-size: 20px;
-    }
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .services-container {
-        padding: 15px;
-    }
-    .services-title {
-        text-align: center;
-        font-size: 18px;
-    }
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-    .service-item {
-        padding: 15px;
-    }
-    .service-heading {
-        font-size: 16px;
-    }
-    .service-description {
-        font-size: 13px;
-    }
-    .service-icon {
-        width: 80px;
-    }
-}
-
-@media (max-width: 480px) {
-  body{
-    width: 100%;
-    overflow-x: hidden;
-  }
-  .deib-ur-reverse {
-    display: block;
-    width: 100%;
-}
-.deib-ur-image {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-right: 20px;
-} 
-.deib-ur-card {
-  display: block;
-  align-items: center;
-  background-color: white;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 12px;
-  border-radius: 10px;
-  min-height: 300px;
+  background: #252525;
   width: 100%;
-  box-sizing: border-box;
-  text-align: left;
-  flex-grow: 1;
-}  
-  
-  .services-container {
-        padding: 10px;
-    }
-    .services-title {
-        font-size: 16px;
-        text-align: center;
-    }
-    .service-heading {
-        font-size: 14px;
-    }
-    .service-description {
-        font-size: 12px;
-    }
-    .service-icon {
-        width: 70px;
-    }
+  color: white;
+  padding: 8px 0px;
 }
 
+/* Logo */
+.deib-nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 
+.deib-nav-logo img {
+  height: 55px;
+}
 
-  
-  /* Header Section */
-  .header-urb {
-    background-color: whitesmoke;
-    color: black;
-    padding: 2rem 1rem;
-    text-align: center;
+.deib-nav-logo span {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Navigation Links */
+.deib-nav-links {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+}
+
+.deib-nav-dropdown-title {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.deib-nav-links a {
+  text-decoration: none;
+  color: rgb(255, 255, 255) !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: 18px;
+  padding: 8px 12px;
+}
+
+.deib-nav-links a:hover {
+  color: rgb(70, 70, 70);
+}
+
+/* Mobile Menu Toggle */
+.deib-nav-mobile-menu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.deib-nav-mobile-menu span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .deib-nav-mobile-menu {
+    display: flex;
   }
-  
-  .header-title-ur {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+
+  .deib-nav-links {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background: #252525;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    transition: left 0.3s ease-in-out;
   }
-  
-  .header-description-ur {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+
+  .deib-nav-links.active {
+    left: 0;
   }
-  
-  /* Call to Action Section */
-  .cta-section-ur {
-    padding: 0rem 0rem;
-    text-align: center;
+
+  .deib-nav-links a {
+    color: rgb(255, 255, 255) !important;
+    width: 100%;
+    display: block;
+    padding: 12px 0;
   }
-  
-  .cta-container-ur {
-    max-width: 800px;
-    margin: 0 auto;
+
+  .deib-nav-links a:hover {
+    color: rgb(70, 70, 70);
   }
-  
-  .cta-button-ur {
-    display: inline-block;
-    padding: 0.7rem 1.5rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-radius: 50px;
-    text-decoration: none;
-    text-align: center;
-    margin: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .partner-btn-ur {
-    background-color: #252525;
-    color: white;
-  }
-  
-  .partner-btn-ur:hover {
-    background-color: #252535;
-    transform: scale(1.05);
-    color: white;
-  }
-  
-  .explore-btn-ur {
-    background-color: #10b981;
-    color: white;
-  }
-  
-  .explore-btn-ur:hover {
-    background-color: #34d399;
-    transform: scale(1.05);
-    color: white;
-  }
-  
+}
+
+/* Dropdown Styling */
+.deib-nav-dropdown {
+  position: relative;
+}
+
+.deib-nav-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #252525;
+  padding: 10px;
+  border-radius: 8px;
+  min-width: 180px;
+  z-index: 1000;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.deib-nav-dropdown:hover .deib-nav-dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+.deib-nav-dropdown-menu a {
+  color: rgb(255, 255, 255) !important;
+  display: block;
+  padding: 10px;
+}
+
+.deib-nav-dropdown-menu a:hover {
+  background: #404040;
+}
